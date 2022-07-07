@@ -39,7 +39,6 @@ app.get("/", (req, res) => {
 app.use("/user", userRouter);
 
 // connect our server application with our database mongo db (atlas cloud version)
-// https://www.mongodb.com/cloud/atlas
 
 const PORT = process.env.PORT || 5002;
 

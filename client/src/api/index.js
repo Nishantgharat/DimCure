@@ -4,7 +4,6 @@ import axios from "axios";
 
 // creating axious end-point
 const API = axios.create({
-  // baseURL: "https://priyam-share-ideas.herokuapp.com/",
   baseURL: "http://localhost:5002",
 });
 
@@ -20,7 +19,6 @@ API.interceptors.request.use((req) => {
 
 // url pointing to our backend route
 // const url = "http://localhost:5000/posts";
-// const url = "https://priyam-share-ideas.herokuapp.com/posts";
 // this url simply returns all posts that we have in our db
 
 export const fetchPost = (id) => API.get(`/posts/${id}`);
